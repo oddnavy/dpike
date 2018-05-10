@@ -1,3 +1,3 @@
 # dpike.co.uk
 
-Personal website hosted using Netlify
+Personal website built using [React Static](https://react-static.js.org) and hosted on [Netlify](https://www.netlify.com).

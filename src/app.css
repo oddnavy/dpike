@@ -9,17 +9,6 @@
     url('/fonts/source-sans-pro-v11-latin-regular.woff') format('woff');
 }
 
-/* source-sans-pro-700 - latin */
-@font-face {
-  font-display: fallback;
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'),
-    url('/fonts/source-sans-pro-v11-latin-700.woff2') format('woff2'),
-    url('/fonts/source-sans-pro-v11-latin-700.woff') format('woff');
-}
-
 *,
 *:before,
 *:after {

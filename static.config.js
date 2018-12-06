@@ -12,6 +12,8 @@ export default {
         <meta name="description" content="Personal website of David Pike Frontend Web Developer" />
         <meta name="author" content="David Pike" />
         <title>David Pike - Senior Frontend Web Developer</title>
+        <link rel="preload" href="/fonts/droidserif.woff2" as="font" type="font/woff2" crossOrigin />
+        <link rel="preload" href="/fonts/droidserif-italic.woff2" as="font" type="font/woff2" crossOrigin />
       </Head>
       <Body>{children}</Body>
     </Html>

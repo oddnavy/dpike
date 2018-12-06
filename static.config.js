@@ -12,7 +12,7 @@ export default {
         <meta name="description" content="Personal website of David Pike Frontend Web Developer" />
         <meta name="author" content="David Pike" />
         <title>David Pike - Senior Frontend Web Developer</title>
-        <link rel="preload" href="/fonts/source-sans-pro-v11-latin-regular.woff2" as="font" type="font/woff2" crossOrigin />
+        <link rel="preload" href="/fonts/source-sans-pro-v11-latin-regular.woff2" as="font" type="font/woff2" crossOrigin="true" />
       </Head>
       <Body>{children}</Body>
     </Html>

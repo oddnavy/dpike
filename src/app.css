@@ -1,5 +1,6 @@
 /* source-sans-pro-regular - latin */
 @font-face {
+  font-display: fallback;
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 400;
@@ -10,6 +11,7 @@
 
 /* source-sans-pro-700 - latin */
 @font-face {
+  font-display: fallback;
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 700;

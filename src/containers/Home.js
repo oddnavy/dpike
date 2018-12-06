@@ -52,7 +52,7 @@ export default () => (
           for contract work.
         </p>
         <p className="soft--top hard--bottom">
-          I like to take <Link to="/posts">photos</Link> and occasionally
+          I like to take <Link to="/posts">photos</Link> and occasionally{' '}
           <a href="https://twitter.com/davidpike7" target="_blank" rel="noopener noreferrer">
             tweet
           </a>

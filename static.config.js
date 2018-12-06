@@ -12,10 +12,6 @@ export default {
         <meta name="description" content="Personal website of David Pike Frontend Web Developer" />
         <meta name="author" content="David Pike" />
         <title>David Pike - Senior Frontend Web Developer</title>
-        <link
-          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
-          rel="stylesheet"
-        />
       </Head>
       <Body>{children}</Body>
     </Html>

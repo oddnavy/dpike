@@ -51,4 +51,6 @@ export default {
       },
     ]
   },
+
+  siteRoot: 'https://dpike.co.uk',
 }

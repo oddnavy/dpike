@@ -12,7 +12,7 @@ export default withRouteData(({ posts }) => (
       {posts.map(post => (
         <li className="photos__item" key={post.id}>
           <img
-            alt={post.caption.text}
+            alt={post.caption ? post.caption.text : post.location.name}
             src={post.images.standard_resolution.url}
             height={post.images.standard_resolution.height}
             width={post.images.standard_resolution.width}

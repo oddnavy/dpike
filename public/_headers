@@ -1,0 +1,5 @@
+/*.js
+  cache-control: maxage=604800
+
+/*.css
+  cache-control: maxage=604800

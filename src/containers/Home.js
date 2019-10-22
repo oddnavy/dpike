@@ -10,13 +10,18 @@ export default () => (
           <a
             href="https://www.linkedin.com/in/david-pike"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             David Pike
           </a>
           . A Senior Frontend Developer based in beautiful Melbourne, Australia.
         </p>
         <p className="beta">
-          Previously, I worked at{' '}
+          Currently working at{' '}
+          <a href="https://inlight.com.au" rel="noopener noreferrer">
+            Inlight
+          </a>
+          . Previously, at{' '}
           <a href="https://www.evolution7.com.au" target="_blank" rel="noopener noreferrer">
             Evolution7
           </a>{' '}
@@ -28,18 +33,12 @@ export default () => (
           <a href="https://www.lifebroker.com.au" target="_blank" rel="noopener noreferrer">
             Lifebroker
           </a>
-          ,{' '}
-          <a
-            href="https://www.moneynow.com.au/calculator/"
-            target="_blank"
-            rel="noopener noreferrer">
-            MoneyNow
-          </a>
           , and many{' '}
           <a
             href="https://www.evolution7.com.au/showcase/overview"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             others
           </a>
           .

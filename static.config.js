@@ -42,7 +42,7 @@ export default {
           const request = await axios.get(`${INSTAGRAM_BASE_URL}/17841400291485644/media`, {
             params: {
               access_token: process.env.INSTAGRAM_ACCESS_TOKEN,
-              fields: 'caption,media_url,permalink,permalink',
+              fields: 'caption,media_url,permalink',
             },
           });
           return { posts: request.data.data };

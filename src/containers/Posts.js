@@ -12,17 +12,15 @@ export default withRouteData(({ posts }) => (
       {posts.map(post => (
         <li className="photos__item" key={post.id}>
           <img
-            alt={post.caption ? post.caption.text : post.location.name}
-            src={post.images.standard_resolution.url}
-            height={post.images.standard_resolution.height}
-            width={post.images.standard_resolution.width}
+            alt={post.caption ? post.caption : ''}
+            src={post.media_url}
           />
           {post.caption ? (
             <div className="photos__item-caption">
               <span role="img" aria-label="Caption">
                 💬
               </span>
-              {post.caption.text}
+              {post.caption}
             </div>
           ) : (
             ''

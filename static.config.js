@@ -1,8 +1,12 @@
-import axios from 'axios';
-import React from 'react';
+import axios from 'axios'
+import React from 'react'
+
+const INSTAGRAM_BASE_URL = 'https://graph.instagram.com'
 
 export default {
-  Document: ({ Html, Head, Body, children }) => (
+  Document: ({
+    Html, Head, Body, children,
+  }) => (
     <Html lang="en-GB">
       <Head>
         <meta charSet="UTF-8" />
@@ -26,12 +30,6 @@ export default {
     title: 'David Pike',
   }),
   getRoutes: async () => {
-    const {
-      data: { data: posts },
-    } = await axios.get(
-      `https://api.instagram.com/v1/users/self/media/recent/?access_token=${process.env.INSTAGRAM_ACCESS_TOKEN}`
-    );
-
     return [
       {
         path: '/',
@@ -40,16 +38,22 @@ export default {
       {
         path: '/posts',
         component: 'src/containers/Posts',
-        getData: () => ({
-          posts,
-        }),
+        getData: async () => {
+          const request = await axios.get(`${INSTAGRAM_BASE_URL}/17841400291485644/media`, {
+            params: {
+              access_token: process.env.INSTAGRAM_ACCESS_TOKEN,
+              fields: 'caption,media_url,permalink,permalink',
+            },
+          });
+          return { posts: request.data.data };
+        },
       },
       {
         is404: true,
         component: 'src/containers/404',
       },
-    ];
+    ]
   },
 
   siteRoot: 'https://www.dpike.co.uk',
-};
+}

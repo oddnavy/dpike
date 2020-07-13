@@ -1,25 +1,13 @@
 {
   "name": "dpike",
-  "version": "1.0.1",
-  "main": "index.js",
-  "license": "MIT",
   "scripts": {
-    "start": "react-static start",
-    "stage": "react-static build --staging",
-    "build": "react-static build",
-    "serve": "serve dist -p 3000"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
-    "axios": "^0.18.0",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-hot-loader": "^4.3.12",
-    "react-router": "^4.3.1",
-    "react-router-ga": "^1.0.0",
-    "react-static": "^5.9.12"
-  },
-  "devDependencies": {
-    "eslint-config-react-tools": "1.x.x",
-    "serve": "^10.1.1"
+    "next": "^9.4.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }

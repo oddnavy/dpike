@@ -1,7 +1,7 @@
-import axios from "axios";
-import React from "react";
+import axios from 'axios';
+import React from 'react';
 
-const INSTAGRAM_BASE_URL = "https://graph.instagram.com";
+const INSTAGRAM_BASE_URL = 'https://graph.instagram.com';
 
 export default {
   Document: ({ Html, Head, Body, children }) => (
@@ -9,10 +9,7 @@ export default {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          name="description"
-          content="Personal website of David Pike Frontend Web Developer"
-        />
+        <meta name="description" content="Personal website of David Pike Frontend Web Developer" />
         <meta name="author" content="David Pike" />
         <title>David Pike - Senior Frontend Web Developer</title>
         <link
@@ -28,19 +25,19 @@ export default {
   ),
 
   getSiteData: () => ({
-    title: "David Pike",
+    title: 'David Pike',
   }),
   getRoutes: async () => [
     {
-      path: "/",
-      component: "src/containers/Home",
+      path: '/',
+      component: 'src/containers/Home',
     },
 
     {
       is404: true,
-      component: "src/containers/404",
+      component: 'src/containers/404',
     },
   ],
 
-  siteRoot: "https://www.dpike.co.uk",
+  siteRoot: 'https://www.dpike.co.uk',
 };

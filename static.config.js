@@ -39,5 +39,5 @@ export default {
     },
   ],
 
-  siteRoot: 'https://www.dpike.co.uk',
+  siteRoot: 'https://dpike.co.uk',
 };

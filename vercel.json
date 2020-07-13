@@ -1,0 +1,23 @@
+{
+  "name": "dpike",
+  "headers": [
+    {
+      "source": "/fonts/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, s-max-age=1, stale-while-revalidate"
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-static'
+import React from 'react';
+import { Link } from 'react-static';
 
 export default () => (
   <div className="container">
@@ -7,11 +7,7 @@ export default () => (
       <div className="intro__inner">
         <p className="beta">
           Hello, I’m{' '}
-          <a
-            href="https://www.linkedin.com/in/david-pike"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://www.linkedin.com/in/david-pike" target="_blank" rel="noopener noreferrer">
             David Pike
           </a>
           . A Senior Frontend Developer based in beautiful Melbourne, Australia.
@@ -34,11 +30,7 @@ export default () => (
             Lifebroker
           </a>
           , and many{' '}
-          <a
-            href="https://www.evolution7.com.au/showcase/overview"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://www.evolution7.com.au/showcase/overview" target="_blank" rel="noopener noreferrer">
             others
           </a>
           .
@@ -51,13 +43,17 @@ export default () => (
           for contract work.
         </p>
         <p className="soft--top hard--bottom">
-          I like to take <Link to="/posts">photos</Link> and occasionally{' '}
+          I occasionally{' '}
           <a href="https://twitter.com/davidpike7" target="_blank" rel="noopener noreferrer">
             tweet
+          </a>{' '}
+          and write on a{' '}
+          <a href="http://nosvamos.co.uk" target="_blank" rel="noopener noreferrer">
+            travel blog
           </a>
           .
         </p>
       </div>
     </div>
   </div>
-)
+);

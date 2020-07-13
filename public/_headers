@@ -1,5 +1,2 @@
-/*.js
-  cache-control: maxage=604800
-
-/*.css
+/*.{css|js|woff|woff2}
   cache-control: maxage=604800

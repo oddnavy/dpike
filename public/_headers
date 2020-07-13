@@ -1,5 +1,0 @@
-/*.{woff|woff2}
-access-control-allow-origin: *
-
-/**.{css|js|woff|woff2}
-  cache-control: maxage=604800

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function HomePage() {
   return (
     <div className="container">
@@ -41,11 +43,15 @@ export default function HomePage() {
             for contract work.
           </p>
           <p className="soft--top hard--bottom">
-            I occasionally{' '}
+            I like to take{' '}
+            <Link href="/posts">
+              <a>photos</a>
+            </Link>
+            , occasionally{' '}
             <a href="https://twitter.com/davidpike7" target="_blank" rel="noopener noreferrer">
               tweet
-            </a>{' '}
-            and write on a{' '}
+            </a>
+            , and keep a{' '}
             <a href="http://nosvamos.co.uk" target="_blank" rel="noopener noreferrer">
               travel blog
             </a>

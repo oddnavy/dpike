@@ -59,7 +59,7 @@ img {
 }
 
 .container--narrow {
-  max-width: 640px;
+  max-width: 690px;
 }
 
 /* Intro */
@@ -112,7 +112,7 @@ img {
 .photos__item-caption span {
   display: inline-block;
   font-size: 14px;
-  margin-right: 0.25em;
+  margin-right: 0.75em;
 }
 
 /* Helpers */

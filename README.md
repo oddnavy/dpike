@@ -1,3 +1,3 @@
 # dpike.co.uk
 
-Personal website built using [React Static](https://react-static.js.org) and hosted on [Netlify](https://www.netlify.com).
+Personal website built using [Next.js](https://nextjs.org) and hosted on [Vercel](https://vercel.com).

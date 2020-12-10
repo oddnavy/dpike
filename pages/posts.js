@@ -17,7 +17,7 @@ export async function getStaticProps() {
     props: {
       posts,
     },
-    unstable_revalidate: 60 * 60 * 24, // 1 day in seconds
+    revalidate: 60 * 60 * 24, // 1 day in seconds
   };
 }
 

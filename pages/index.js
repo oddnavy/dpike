@@ -62,3 +62,7 @@ export default function HomePage() {
     </div>
   );
 }
+
+export const config = {
+  unstable_runtimeJS: false,
+};

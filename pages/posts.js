@@ -33,6 +33,10 @@ export default function PostsPage({ posts }) {
   );
 }
 
+export const config = {
+  unstable_runtimeJS: false,
+};
+
 export async function getStaticProps() {
   const instagramEndpoint = `https://www.instagram.com/graphql/query/?query_hash=9dcf6e1a98bc7f6e92953d5a61027b98&variables={"id":"361225716","first":16}`;
   const response = await fetch(instagramEndpoint).then((res) => res.json());
@@ -52,6 +56,5 @@ export async function getStaticProps() {
       posts,
     },
     revalidate: 60 * 60 * 24, // 1 day in seconds
-    fallback: 'blocking',
   };
 }

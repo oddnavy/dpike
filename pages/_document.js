@@ -5,7 +5,7 @@ const GA_TRACKING_ID = 'UA-119176449-1';
 export default class MyDocument extends Document {
   render() {
     return (
-      <html>
+      <html lang="en">
         <Head>
           <script
             defer

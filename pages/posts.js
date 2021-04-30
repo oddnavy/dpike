@@ -63,7 +63,9 @@ export async function getStaticProps() {
         caption: edge.node.edge_media_to_caption.edges[0] ? edge.node.edge_media_to_caption.edges[0].node.text : '',
       };
     });
-  } catch (error) {}
+  } catch (error) {
+    console.log('Error fetching Instagram posts', { error });
+  }
 
   return {
     props: {

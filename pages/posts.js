@@ -64,7 +64,7 @@ export async function getStaticProps() {
       };
     });
   } catch (error) {
-    console.log('Error fetching Instagram posts', { error });
+    console.error('Error fetching Instagram posts', { error });
   }
 
   return {

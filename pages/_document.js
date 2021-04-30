@@ -1,11 +1,9 @@
-import Document, { Head, Main, NextScript } from 'next/document';
-
-const GA_TRACKING_ID = 'UA-119176449-1';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 export default class MyDocument extends Document {
   render() {
     return (
-      <html lang="en">
+      <Html lang="en">
         <Head>
           <script
             defer
@@ -17,7 +15,7 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }

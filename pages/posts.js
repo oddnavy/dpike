@@ -42,10 +42,6 @@ export default function PostsPage({ posts }) {
   );
 }
 
-export const config = {
-  unstable_runtimeJS: false,
-};
-
 export async function getStaticProps() {
   const instagramEndpoint = `https://www.instagram.com/graphql/query/?query_hash=9dcf6e1a98bc7f6e92953d5a61027b98&variables={%22id%22:%22361225716%22,%22first%22:16}`;
 

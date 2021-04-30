@@ -47,7 +47,7 @@ export const config = {
 };
 
 export async function getStaticProps() {
-  const instagramEndpoint = `https://www.instagram.com/graphql/query/?query_hash=32b14723a678bd4628d70c1f877b94c9&variables=%7B%22id%22%3A%22361225716%22%2C%22first%22%3A12%2C%22after%22%3A%22QVFCSEZfckRYT3BiTHRSWEE0ZzBPTW40amdqZFpaSEFTRk9TdXI3bk1xVlhKYVBrS09BWS1wUzJLa1ItbU81OHNDY0NTWDBDZFFkUnpkZHZyMUNjNE1QcA%3D%3D%22%7D`;
+  const instagramEndpoint = `https://www.instagram.com/graphql/query/?query_hash=9dcf6e1a98bc7f6e92953d5a61027b98&variables={%22id%22:%22361225716%22,%22first%22:16}`;
 
   let posts = [];
 

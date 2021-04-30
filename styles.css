@@ -32,7 +32,7 @@ body {
 
 a {
   color: inherit;
-  transition: color 200ms ease;
+  transition: color 150ms ease;
 }
 
 a:hover {

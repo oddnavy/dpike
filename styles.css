@@ -1,12 +1,12 @@
 /* source-sans-pro-regular - latin */
 @font-face {
   font-display: fallback;
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 400;
-  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
-    url('/fonts/source-sans-pro-v11-latin-regular.woff2') format('woff2'),
-    url('/fonts/source-sans-pro-v11-latin-regular.woff') format('woff');
+  src: local("Source Sans Pro Regular"), local("SourceSansPro-Regular"),
+    url("/fonts/source-sans-pro-v11-latin-regular.woff2") format("woff2"),
+    url("/fonts/source-sans-pro-v11-latin-regular.woff") format("woff");
 }
 
 *,
@@ -18,7 +18,7 @@
 body {
   background: #fafafa;
   color: #000501;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -32,7 +32,7 @@ body {
 
 a {
   color: inherit;
-  transition: color 150ms ease;
+  transition: color 120ms ease;
 }
 
 a:hover {

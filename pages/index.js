@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -6,53 +6,57 @@ export default function HomePage() {
       <div className="intro">
         <div className="intro__inner">
           <p className="beta">
-            Hello, I’m{' '}
-            <a href="https://www.linkedin.com/in/david-pike" target="_blank" rel="noopener noreferrer">
+            Hello, I’m{" "}
+            <a
+              href="https://www.linkedin.com/in/david-pike"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               David Pike
             </a>
-            . A Senior Frontend Developer based in beautiful Melbourne, Australia.
+            . A Senior Developer with based in beautiful Melbourne, Australia.
           </p>
           <p className="beta">
-            Currently working at{' '}
+            Currently working at{" "}
             <a href="https://inlight.com.au" rel="noopener noreferrer">
               Inlight
             </a>
-            . Previously, at{' '}
-            <a href="https://www.evolution7.com.au" target="_blank" rel="noopener noreferrer">
-              Evolution7
-            </a>{' '}
-            helping build websites for{' '}
-            <a href="https://www.grilld.com.au" target="_blank" rel="noopener noreferrer">
-              Grill’d
+            . Helping build web and mobile applications for{" "}
+            <a
+              href="https://nandos.com.au"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Nando’s
             </a>
-            ,{' '}
-            <a href="https://www.lifebroker.com.au" target="_blank" rel="noopener noreferrer">
-              Lifebroker
-            </a>
-            , and many{' '}
-            <a href="https://www.evolution7.com.au/showcase/overview" target="_blank" rel="noopener noreferrer">
-              others
-            </a>
-            .
+            , Swisse, Hallmark, 7-Eleven and many others.
           </p>
           <p className="beta">
-            I am currently{' '}
+            I am currently{" "}
             <a className="text-red" href="mailto:david@dpike.co.uk">
               unavailable
-            </a>{' '}
+            </a>{" "}
             for contract work.
           </p>
           <p className="soft--top hard--bottom">
-            I like to take{' '}
+            I like to take{" "}
             <Link href="/posts">
               <a>photos</a>
             </Link>
-            , occasionally{' '}
-            <a href="https://twitter.com/davidpike7" target="_blank" rel="noopener noreferrer">
+            , occasionally{" "}
+            <a
+              href="https://twitter.com/davidpike7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               tweet
             </a>
-            , and keep a{' '}
-            <a href="http://nosvamos.co.uk" target="_blank" rel="noopener noreferrer">
+            , and used to keep a{" "}
+            <a
+              href="https://www.nosvamos.co.uk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               travel blog
             </a>
             .

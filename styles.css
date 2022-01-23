@@ -100,6 +100,11 @@ img {
   }
 }
 
+/* Force Next/Image to display block */
+.photos__item > div {
+  display: block !important;
+}
+
 .photos__item:last-child {
   margin-bottom: 3rem;
 }

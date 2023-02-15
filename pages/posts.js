@@ -52,11 +52,7 @@ export async function getStaticProps() {
   let posts = [];
 
   try {
-    const response = await fetch(instagramEndpoint, {
-      headers: {
-        cookie: `sessionid=${process.env.INSTAGRAM_COOKIE}`,
-      },
-    }).then((res) => res.json());
+    const response = await fetch(instagramEndpoint).then((res) => res.json());
     posts = response.data.user.edge_owner_to_timeline_media.edges.map(
       (edge) => {
         return {

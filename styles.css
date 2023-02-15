@@ -158,3 +158,7 @@ img {
 .hard--bottom {
   margin-bottom: 0;
 }
+
+.text-center {
+  text-align: center;
+}

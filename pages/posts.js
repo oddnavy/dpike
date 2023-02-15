@@ -1,9 +1,9 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function PostsPage({ posts }) {
   return (
     <div className="container container--narrow">
-      <h1 style={{ textAlign: 'center' }}>
+      <h1 className="text-center">
         <span role="img" aria-label="Photos">
           📷
         </span>
@@ -13,7 +13,7 @@ export default function PostsPage({ posts }) {
           {posts.map((post) => (
             <li className="photos__item" key={post.id}>
               <Image
-                alt={post.caption ? post.caption : ''}
+                alt={post.caption ? post.caption : ""}
                 src={post.media_url}
                 width={post.width}
                 height={post.height}
@@ -26,15 +26,19 @@ export default function PostsPage({ posts }) {
                   {post.caption}
                 </div>
               ) : (
-                ''
+                ""
               )}
             </li>
           ))}
         </ul>
       )}
-      <p className="push--bottom" style={{ textAlign: 'center' }}>
-        See more on{' '}
-        <a href="https://www.instagram.com/oddnavy" target="_blank" rel="noopener noreferrer">
+      <p className="push--bottom text-center">
+        See more on{" "}
+        <a
+          href="https://www.instagram.com/oddnavy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Instagram →
         </a>
       </p>
@@ -53,18 +57,24 @@ export async function getStaticProps() {
         cookie: `sessionid=${process.env.INSTAGRAM_COOKIE}`,
       },
     }).then((res) => res.json());
-    posts = response.data.user.edge_owner_to_timeline_media.edges.map((edge) => {
-      return {
-        id: edge.node.id,
-        media_url: edge.node.display_resources[0].src,
-        width: edge.node.display_resources[0].config_width,
-        height: edge.node.display_resources[0].config_height,
-        thumbnail_url: edge.node.is_video ? $edge.node.thumbnail_resources[2].src : null,
-        caption: edge.node.edge_media_to_caption.edges[0] ? edge.node.edge_media_to_caption.edges[0].node.text : '',
-      };
-    });
+    posts = response.data.user.edge_owner_to_timeline_media.edges.map(
+      (edge) => {
+        return {
+          id: edge.node.id,
+          media_url: edge.node.display_resources[0].src,
+          width: edge.node.display_resources[0].config_width,
+          height: edge.node.display_resources[0].config_height,
+          thumbnail_url: edge.node.is_video
+            ? $edge.node.thumbnail_resources[2].src
+            : null,
+          caption: edge.node.edge_media_to_caption.edges[0]
+            ? edge.node.edge_media_to_caption.edges[0].node.text
+            : "",
+        };
+      }
+    );
   } catch (error) {
-    console.error('Error fetching Instagram posts', { error });
+    console.error("Error fetching Instagram posts", { error });
   }
 
   return {

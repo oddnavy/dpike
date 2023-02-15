@@ -39,11 +39,7 @@ export default function HomePage() {
             for contract work.
           </p>
           <p className="soft--top hard--bottom">
-            I like to take{" "}
-            <Link href="/posts">
-              <a>photos</a>
-            </Link>
-            , occasionally{" "}
+            I like to take <Link href="/posts">photos</Link>, occasionally{" "}
             <a
               href="https://twitter.com/davidpike7"
               target="_blank"

@@ -47,7 +47,7 @@ export default function PostsPage({ posts }) {
 }
 
 export async function getStaticProps() {
-  const instagramEndpoint = `https://www.instagram.com/graphql/query/?query_hash=9dcf6e1a98bc7f6e92953d5a61027b98&variables={%22id%22:%22361225716%22,%22first%22:16}`;
+  const instagramEndpoint = `https://www.instagram.com/graphql/query/?query_hash=e769aa130647d2354c40ea6a439bfc08&variables={%22id%22:%22361225716%22,%22first%22:16}`;
 
   let posts = [];
 

@@ -14,22 +14,22 @@ export default function HomePage() {
             >
               David Pike
             </a>
-            . A Senior Developer with based in beautiful Melbourne, Australia.
+            . A Senior Software Engineer based in beautiful Melbourne, Australia.
           </p>
           <p className="beta">
             Currently working at{" "}
-            <a href="https://inlight.com.au" rel="noopener noreferrer">
-              Inlight
+            <a href="https://www.atlassian.com/" rel="noopener noreferrer">
+              Atlassian
             </a>
-            . Helping build web and mobile applications for{" "}
+            . Helping build{" "}
             <a
               href="https://nandos.com.au"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Nando’s
+              Jira
             </a>
-            , Swisse, Hallmark, 7-Eleven and many others.
+            , and other things.
           </p>
           <p className="beta">
             I am currently{" "}

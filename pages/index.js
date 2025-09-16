@@ -23,7 +23,7 @@ export default function HomePage() {
             </a>
             . Helping build{" "}
             <a
-              href="https://nandos.com.au"
+              href="https://www.atlassian.com/software/jira"
               target="_blank"
               rel="noopener noreferrer"
             >

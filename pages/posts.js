@@ -65,7 +65,7 @@ export async function getStaticProps() {
           width: edge.node.display_resources[0].config_width,
           height: edge.node.display_resources[0].config_height,
           thumbnail_url: edge.node.is_video
-            ? $edge.node.thumbnail_resources[2].src
+            ? edge.node.thumbnail_resources?.[2]?.src || null
             : null,
           caption: edge.node.edge_media_to_caption.edges[0]
             ? edge.node.edge_media_to_caption.edges[0].node.text

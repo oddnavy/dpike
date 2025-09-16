@@ -4,15 +4,15 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "upgrade": "npm outdated || true && npx npm-check-updates -u --target latest --timeout 120000 --format group && npm install --no-audit --no-fund --no-optional"
   },
   "dependencies": {
-    "@next/font": "^13.1.6",
-    "next": "^14.2.21",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "next": "^15.5.3",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
-    "prettier": "^2.8.4"
+    "prettier": "^3.6.2"
   }
 }

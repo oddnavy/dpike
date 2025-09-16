@@ -1,5 +1,5 @@
 import Head from "next/head";
-import localFont from "@next/font/local";
+import localFont from "next/font/local";
 
 import "../styles.css";
 

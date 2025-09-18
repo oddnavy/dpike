@@ -26,10 +26,10 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="Personal website of David Pike Frontend Web Developer"
+          content="Personal website of David Pike Senior Software Engineer"
         />
         <meta name="author" content="David Pike" />
-        <title>David Pike - Senior Frontend Web Developer</title>
+        <title>David Pike – Senior Software Engineer</title>
       </Head>
       <div className={sourceSans.className}>
         <Component {...pageProps} />

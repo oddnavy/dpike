@@ -8,7 +8,7 @@
     "upgrade": "npm outdated || true && npx npm-check-updates -u --target latest --timeout 120000 --format group && npm install --no-audit --no-fund --no-optional"
   },
   "dependencies": {
-    "next": "^15.5.3",
+    "next": "^15.5.8",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
